@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import Primeiro from './componentes/Primeiro'
 import Blabla from './componentes/BomDia'
 import Multi , {BoaNoite} from './componentes/Multiplos'
 import Form from './componentes/Formulario'
+import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
 
 ReactDOM.render(<Primeiro />, document.getElementById('root'));
 
@@ -28,5 +28,16 @@ ReactDOM.render(
          <Form.Foumulario /> 
     </div>
 , document.getElementById('root5'))
+
+
+ReactDOM.render(
+    <div>
+        <Pai nome="Paulo" sobrenome="Silva">]
+            <Filho nome="Pedro"/>
+            <Filho nome="Paulo"/>
+            <Filho nome="Carla"/>
+        </Pai>
+    </div>
+, document.getElementById('root6'))
 
 
